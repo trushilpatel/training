@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Trushil Patel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="menu" onclick="toggleMenubar(this)">
+      <div class="menubar1"></div>
+      <div class="menubar2"></div>
+      <div class="menubar3"></div>
+    </div>
+    <div class="page-title">
+      <p>
+        Gallery
+      </p>
+    </div>
+
+  </header>
+  <div id="left-section" class="left-section">
+    <div>
+      <div class="sidebar-user-image">
+        <img src="images/user.png" width="100%" alt="User">
+      </div>
+      <div>
+        <div class="sidebar-button">Home</div>
+        <div class="sidebar-button">About</div>
+        <div class="sidebar-button">Contact us</div>
+      </div>
+    </div>
+  </div>
+  <div id="right-section" class="right-section">
+    <div class="page-header">
+      <p>Beautiful Nature</p>
+    </div>
+    <div class="container">
+      <img id="expandedImg" class="fade" src="images/1.jpg">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div>
+      <div class="row">
+        <div class="column">
+          <img src="images/1.jpg" class="fade" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/2.jpg" class="fade" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/3.jpg" class="fade" alt="Mountains" onclick="myFunction(this);">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

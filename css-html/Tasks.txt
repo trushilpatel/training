@@ -1,0 +1,65 @@
+min height
+max height
+
+viewport
+flexbox
+
+display : flex
+flex keyword
+    flex keyword only work if parent have the display: flex
+
+Create webpage same as https://yoksel.github.io/flex-cheatsheet/
+                       https://websitesetup.org/html5-periodical-table/
+
+create a website which on scroll shows brings you to the next slide on webpage 
+so it's a web slide vertically make similar for horizontally
+
+How to create our own fonts 
+                      SVG images
+
+show animation on div elements same as show in bluehost.in                     
+transition-duration
+
+
+what is pseudo class in css search it on css-tricks.com
+flexbox
+
+:nth-child() in css
+:first-child
+:last-child
+
+
+Use w3-include-html to import html like foot and header into other html file
+
+width: vw vh and many more
+
+justify-content
+
+check out vscode short-cuts
+
+css  course what i have in learn 
+
+PX EM & REM on font size
+
+How to add logo in titles
+
+Pixel density
+
+srcset with width in img for low to high quality images
+
+sigma JS 
+
+calculate size dynamically using calculator
+or math
+
+DOCTYPE 4  can manage audio video tag or not?
+
+shadow dom
+
+use multiple id on different div
+
+id vs class in css
+
+create our own html tag
+
+material design vs bootstrap
