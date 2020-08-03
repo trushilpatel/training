@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-dark">
-  <nav class="navbar navbar-expand bg-dark navbar-dark nav-primary border-bottom fixed-top">
+  <nav id="main-nav" class="navbar navbar-expand bg-dark navbar-dark nav-primary border-bottom sticky-top">
     <div class="container ">
       <a class="navbar-brand">Looplap</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavId">
@@ -37,11 +37,12 @@
     </div>
   </nav>
   <header id="home-head">
-    <div class="dark-overlay mt-5">
-      <div class="container mt-5">
-        <div class="row mt-5 ">
+    <div class="dark-overlay">
+      <div class="container-fluid ">
+        <div class="row">
           <div class="col-lg-8 d-none d-lg-block align-items-center d-flex">
-            <div class="display-4 align-self-center">Build <strong>social profiles</strong> and gain revenue and profits</div>
+            <div class="display-4 align-self-center">Build <strong>social profiles</strong> and gain revenue and profits
+            </div>
           </div>
           <div class="col-lg-4">
             <div class="card bg-primary">
@@ -73,12 +74,12 @@
   </header>
 
   <section id="explore-head">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col text-center py-5">
           <h1 class="display-4">Explore</h1>
           <p class="lead">
-            Here is some random text 
+            Here is some random text
             Just add what you wanted to add
           </p>
         </div>
@@ -86,7 +87,96 @@
     </div>
   </section>
 
-  section#explore-section.bg-light.text-muted
+  <section id="explore-section" class="border-top  text-muted bg-light pt-4 pb-5">
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img src="images/2.jpg" alt="What a beautiful world" class="img-fluid mb-3 rounded-circle">
+        </div>
+        <div class="d-flex col">
+          <div class="display-4 align-self-center">
+            Explore about nature
+          </div>
+          <div class="align-self-center ml-5 d-none d-md-block">
+            <p class="lead text-dark">What a beautiful natura</p>
+            <p class="lead text-dark">Indeed!!! RIGHT....?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="create-head">
+    <div class="container-fluid bg-primary text-center pt-5 pb-5">
+      <h1 class="display-4 text-light pt-3">
+        Create
+      </h1>
+      <div class="pt-3 pb-3">
+        <p class="lead">There is always something to create new...</p>
+        <p class="lead">It's all about the time when you find it's out...</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container-fluid mt-5 mb-5">
+    <div class="row">
+      <div class="m-auto d-flex col-md-5 col-12 text-center">
+        <div class="align-self-center">
+          <div class="display-4 align-self-center">
+            Create Your Passion
+          </div>
+          <small class="lead">Indeed we are talking about with us... LOL</small>
+        </div>
+      </div>
+      <div class="col-6">
+        <img src="images/3.jpg" alt="" class="d-none d-md-block img-fluid rounded-circle">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="share-head">
+    <div class="container-fluid-lg">
+      <div class="bg-primary text-center pt-4 pb-4 ">
+        <div class="display-4">
+          Contact
+        </div>
+        <div class="lead">
+          We are happy to talk with you...
+        </div>
+      </div>
+      <div class=" row pt-2 bg-primary pb-5">
+        <div class="mr-auto ml-auto">
+          <button class="btn btn-light ">E-mail us</button>
+          <button class="btn btn-light ">Call us</button>
+          <button class="btn btn-light ">Send Letter</button>
+          <button class="btn btn-light " data-toggle="modal" data-target="#myModal">Contact</button>
+          <div id="myModal" class="modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header flex-row d-flex">
+                  <div class="display-4 modal-title container text-dark">
+                    Contact Us
+                  </div>
+                  <button class="close" data-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body text-dark">
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="email">
+                    <textarea name="textarea" class="form-control form-control-lg pt-3 mt-2" id=""
+                      placeholder="Enter your message..."></textarea>
+                    <button type="submit" value="Submit" class="form-control form-control-lg mt-4">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
