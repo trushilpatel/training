@@ -1,0 +1,21 @@
+.navbar {
+  box-shadow: 0px 3px 17px rgb(24, 24, 25) !important;
+}
+
+.home-section {
+  background-image: url(Images/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 40rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 44.8rem;
+  width: 100%;
+
+}
