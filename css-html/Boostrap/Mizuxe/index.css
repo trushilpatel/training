@@ -19,3 +19,16 @@
   width: 100%;
 
 }
+
+.fa {
+  font-size: 30px !important;
+}
+
+.card-body>img {
+  margin-top:-3rem !important;
+}
+
+.card-body:hover {
+  background-color: black;
+  color: white;
+}
