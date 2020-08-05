@@ -1,0 +1,12 @@
+#myimg {
+  height: 100%;
+  width: 100%;
+}
+
+.port-item {
+  width: 30%;
+}
+
+.fa {
+  font-size: 2rem !important;
+}
