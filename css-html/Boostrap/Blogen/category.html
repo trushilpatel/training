@@ -17,7 +17,7 @@
   <!--Navigation-->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand ml-3">Blogen</a>
+      <a href="index.html" class="navbar-brand ml-3">Blogen</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,7 +40,7 @@
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-user mr-3"></i>Welcome Trushil
             </a>
             <div class="dropdown-menu bg-dark text-light">
@@ -64,12 +64,12 @@
 
   <!--header-->
   <header>
-    <div class="container-fluid bg-danger py-1">
+    <div class="container-fluid bg-success py-2">
       <div class="row">
         <div class="col-md-6 text-white">
           <h1 class="lead ml-2">
             <i class="fa fa-cog"></i>
-            Dashboard
+            Category
           </h1>
         </div>
       </div>
@@ -78,81 +78,22 @@
 
   <!--Post-->
   <div class="container-fluid mt-3">
-    <div class="row ">
-      <div class="ml-auto col-sm-2 text-center m-2">
-        <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#post-modal">
-          <i class="fa fa-plus mr-2"></i>
-          Add Post
-        </button>
-      </div>
-      <div class="col-sm-2 text-center m-2">
-        <button class="btn btn-warning btn-block" data-toggle="modal" data-target="#category-modal">
-          <i class="fa fa-plus mr-2"></i>
-          Add User
-        </button>
-      </div>
-      <div class="col-sm-2 mr-auto text-center m-2">
-        <button class="btn btn-success btn-block" data-toggle="modal" data-target="#user-modal">
-          <i class="fa fa-plus mr-2"></i>
-          Add Category
-        </button>
-      </div>
+
+    <div class="col-sm-2 text-center m-2 ml-auto mr-auto">
+      <button class="btn btn-success btn-block" data-toggle="modal" data-target="#category-modal">
+        <i class="fa fa-plus mr-2"></i>
+        Add Category
+      </button>
     </div>
   </div>
-
-  <!--Post Modal-->
-  <div class="modal fade" id="post-modal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title">Add Post</h5>
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group form-inline row">
-              <label for="title" class="col-sm-3 col-12 float-left align-self-start">Title</label>
-              <input type="text" class="form-control col-sm-7 col-8 ml-auto mr-auto" placeholder="Enter title"
-                name="title">
-            </div>
-            <div class="form-group form-inline row">
-              <label for="category" class="col-sm-3 col-12">Category</label>
-              <select class="form-control col-sm-7 col-8 ml-auto mr-auto" name="" id="">
-                <option value="">Web Development</option>
-                <option value="">Programmer Analyst</option>
-                <option value="">QA</option>
-                <option value="">DevOps</option>
-              </select>
-            </div>
-            <div class="form-group form-inline row">
-              <label for="image" class="col-sm-3 col-12">Upload Image</label>
-              <div class="custom-file col-sm-7 col-8 ml-auto mr-auto">
-                <input type="file" class="custom-file-input" id="image">
-                <label for="image" class="custom-file-label ">Choose File</label>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="#cke_editor1" class=" col-sm-3 col-12">Body</label>
-              <textarea name="editor1" class=" ml-auto mr-auto"></textarea>
-
-            </div>
-            <div class="form-group row">
-              <button type="submit" value="submit"
-                class="mt-2 btn-block ml-auto mr-auto col-sm-6 col-12 btn btn-primary btn-lg"> Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
   </div>
+
 
   <!--Category Modal-->
   <div class="modal fade" id="category-modal">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="modal-header bg-warning text-white">
+        <div class="modal-header bg-success text-white">
           <h5 class="modal-title">Add Category</h5>
           <button class="close" data-dismiss="modal">
             <span>&times;</span>
@@ -179,63 +120,18 @@
             </div>
             <div class="form-group row">
               <button type="submit" value="submit"
-                class="mt-2 btn-block ml-auto mr-auto col-sm-6 col-12 btn btn-warning btn-lg"> Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--User Modal-->
-  <div class="modal fade" id="user-modal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-success text-white">
-          <h5 class="modal-title">Add User</h5>
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group form-inline row">
-              <label for="title" class="col-sm-3 col-12 float-left align-self-start">Name</label>
-              <input type="text" class="form-control col-sm-7 col-8 ml-auto mr-auto" placeholder="Enter name..."
-                name="title">
-            </div>
-            <div class="form-group form-inline row">
-              <label for="title" class="col-sm-3 col-12 float-left align-self-start">Email</label>
-              <input type="text" class="form-control col-sm-7 col-8 ml-auto mr-auto" placeholder="Enter email..."
-                name="title">
-            </div>
-            <div class="form-group form-inline row">
-              <label for="password1" class="col-sm-3 col-12 float-left align-self-start">Password</label>
-              <input type="password" class="form-control col-sm-7 col-8 ml-auto mr-auto" placeholder="Enter password..."
-                name="password1">
-            </div>
-            <div class="form-group form-inline row">
-              <label for="password2" class="col-sm-3 col-12 float-left align-self-start">Confirm Password</label>
-              <input type="password" class="form-control col-sm-7 col-8 ml-auto mr-auto" placeholder="Enter Password..."
-                name="password2">
-            </div>
-            <div class="form-group">
-              <button type="submit" value="submit"
                 class="mt-2 btn-block ml-auto mr-auto col-sm-6 col-12 btn btn-success btn-lg"> Submit</button>
-
             </div>
-
           </form>
         </div>
       </div>
     </div>
   </div>
-
   <!--Main Section-->
   <div class="posts my-5">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-9 ">
           <div class="card">
             <div class="card-header">
               <h4>Latest Post</h4>
@@ -332,34 +228,12 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card text-center bg-primary text-white mt-3 mt-md-0 mb-3">
-            <div class="card-body">
-              <h3>Posts</h3>
-              <h4 class="display-4">
-                <i class="fa fa-pencil mr-2"></i> 10
-              </h4>
-
-              <a href="post.html" class="btn btn-outline-light btn-sm btn-block btn-lg">View</a>
-            </div>
-          </div>
-          <div class="card text-center bg-warning text-white mb-3">
-            <div class="card-body">
-              <h3>Users</h3>
-              <h4 class="display-4">
-                <i class="fa fa-pencil mr-2"></i> 17
-              </h4>
-
-              <a href="post.html" class="btn btn-outline-light btn-sm btn-block btn-lg">View</a>
-            </div>
-          </div>
           <div class="card text-center bg-success text-white mb-3">
             <div class="card-body">
               <h3>Categories</h3>
               <h4 class="display-4">
                 <i class="fa fa-pencil mr-2"></i> 10
               </h4>
-
-              <a href="post.html" class="btn btn-outline-light btn-sm btn-block btn-lg">View</a>
             </div>
           </div>
         </div>
