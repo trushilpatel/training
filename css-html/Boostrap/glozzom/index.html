@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../Mizuxe/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="../Mizuxe/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <title>Glozzom</title>
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="">
+    <div class="container-fluid px-0">
+      <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="navbar-brand">
+          Glozzom
+        </div>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarItems">
+          <i class="navbar-toggler-icon"></i>
+        </button>
+
+        <div id="navbarItems" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--ShowCase slider-->
+  <section id="showcase" class="container-fluid">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container-fluid">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <div class="display-4">Heading One</div>
+              <button class="btn btn-lg btn-danger ml-auto mr-auto mt-5">Sign Up Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-2">
+          <div class="container-fluid">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <div class="display-4">Heading Two</div>
+              <button class="btn btn-lg btn-primary ml-auto mr-auto mt-5">Learn More</button>
+            </div>
+          </div>
+        </div>?<div class="carousel-item carousel-image-3">
+          <div class="container-fluid">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <div class="display-4">Heading Three</div>
+              <button class="btn btn-lg btn-success ml-auto mr-auto mt-5">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+        <i class="carousel-control-prev-icon"></i>
+      </a>
+
+      <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+        <i class="carousel-control-next-icon"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <!--Icons-->
+  <section class="container-fluid text-dark my-5 py-3">
+    <div class="d-flex justify-content-around flex-md-row flex-column">
+      <div class="text-center my-3 ">
+        <i class="fa fa-cog fa-3x mb-2"></i>
+        <div class="display-4">Settings</div>
+      </div>
+      <div class="text-center my-3">
+        <i class="fa fa-cloud fa-3x mb-2"></i>
+        <div class="display-4">Sending Data</div>
+      </div>
+      <div class="text-center my-3">
+        <i class="fa fa-dollar fa-3x mb-2"></i>
+        <div class="display-4">Making Money</div>
+      </div>
+    </div>
+  </section>
+
+  <!--Home Heading-->
+  <section id="home-heading" class="p-5 text-center text-white">
+    <div class="dark-overlay d-flex align-items-center">
+      <div class="container ">
+        <div class="display-4 text-center ">
+          Your are Ready to Get Started
+        </div>
+        <p class="lead">
+          Assume the best line you have ever read is written here
+        </p>
+        <p class="lead"> THat's a greate line</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery-->
+  <section id="gallery" class="py-5 ">
+    <div class="container-fluid">
+      <h1 class="text-center display-4">Photo Gallery</h1>
+      <p class="lead text-center"> Check out our photo</p>
+      <div class="row mb-5 pt-5">
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4  py-3 text-center">
+          <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/564x564" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/566x566" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/566x566" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/567x567" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/568x568" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 py-3 text-center">
+          <a href="https://source.unsplash.com/random/569x569" data-toggle="lightbox" data-gallery="img-gallery"
+            data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/569x569" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--News Letter-->
+  <section>
+    <div class="container-fluid bg-dark text-white">
+      <div class="text-center py-5">
+        <div class="display-4">
+          Sign Up For Our Newsletter
+        </div>
+        <p class="lead">lsakdfj laskjlfk asl flsal flksadjlkfjlsajflkjg ljdslf; a</p>
+      </div>
+      <div class="form-inline justify-content-center pb-5">
+        <div class="form-group text-right ">
+          <input type="text" name="" id="" placeholder="Email address" class="pr-5 mr-2form-control form-control-lg">
+        </div>
+        <div class="ml-3form-group text-center">
+          <button class="ml-3 btn btn-block  btn-outline-primary btn-lg">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
+</body>
+
+</html>
