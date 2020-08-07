@@ -3,3 +3,22 @@
   border-bottom:0.1rem solid black;
   border-color: black;
 }
+
+.note-text {
+  font-size: 2rem;
+}
+
+.card-body:hover {
+  background-color: rgb(85, 93, 102);
+  color: white;
+  transition: 0.5s;
+}
+
+#notes {
+  transition: 2s;
+}
+
+.card {
+  position: relative;
+  transition: 2s;
+}
