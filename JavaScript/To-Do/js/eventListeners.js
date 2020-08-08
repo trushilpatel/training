@@ -18,19 +18,29 @@ document.querySelector("#submitNote").addEventListener(
 
 
 let showCompleted = true;
+let searchText = '';
+
 document.querySelector("#showHideCompletedNotes").addEventListener("click",
   function () {
     showCompleted = !showCompleted;
 
-    let newStatus = !showCompleted ? "Show Completed" : "Hide Completed";
+    newStatus = !showCompleted ? "Show Completed" : "Hide Completed";
+    searchText = document.getElementById("searchText").value;
 
     document.querySelector("#completedNoteStatus").innerHTML = newStatus;
     console.log("completedNoteStatus : " + newStatus + " " + showCompleted)
-    renderNotes(showCompleted = showCompleted);
+    renderNotes(showCompleted, searchText);
   })
-
+  
 document.querySelector("#searchText").addEventListener('input',
   function () {
-    let searchText = document.getElementById("searchText").value;
-    renderNotes(showCompleted = showCompleted,searchText = searchText)
+    searchText = document.getElementById("searchText").value;
+    console.log(searchText)
+    renderNotes(showCompleted, searchText)
   })
+
+  function clearSearchText(){
+    document.getElementById("searchText").value = '';
+    searchText='';
+    renderNotes(showCompleted, searchText)
+  }

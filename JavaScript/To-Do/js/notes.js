@@ -16,6 +16,9 @@ function renderNotes(showSelected, searchText) {
     })
   }
 
+  console.log("Final Notes :" )
+  console.log(Notes)
+
   for (let note of Notes) {
     children.push(getNoteHTML(note));
   }
@@ -35,7 +38,7 @@ function getNoteHTML(note) {
   let selectedColor = note.complete ? color[3] : color[Math.round(Math.random() * (2))];
 
   let card = `<div class="card text-center shadow">
-    <div id=${'noteHeader-' + note.id} class="card-header form-inline  text-white ${selectedColor} ">
+    <div id=${'noteHeader-' + note.id} class="card-header py-3 form-inline  text-white ${selectedColor} ">
       <div class="form-group form-inline">
       <label class="lead mx-3 px-2" style="transform: scale(1.2)">${note.date}</label>
     </div>
@@ -57,6 +60,4 @@ function getNoteHTML(note) {
 
   return card;
 }
-
-
 renderNotes();

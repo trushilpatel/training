@@ -14,69 +14,68 @@
 </head>
 
 <body>
+  <div id="background" class="container-fluid pt-5">
+    <div id="overlay-nav">
+      <nav class="navbar navbar-dark bg-transparent border-bottom border-dark">
+        <div class="navbar-brand text-dark">
+          <div class="display-4">
+            To-Do List
+          </div>
+        </div>
+        <div class="pt-4 controller row">
+          <div class="form-group form-inline mx-2 ">
+            <div class="input-group">
+              <input id="searchText" type="text" name="searchText" placeholder="Search note..."
+                class="bg-transparent form-control border-primary border-right-0 border-left-0 border-top-0 align-text-bottom  border-white text-dark bg-dark ">
+              <button class="input-group-append bg-transparent border-0" onclick="clearSearchText()">
+                <i class="fa fa-undo text-white align-self-center ml-2" style="transform: scale(2);"></i>
+              </button>
+            </div>
+          </div>
 
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="navbar-brand">To-Do List</div>
-    <div class="pt-4 controller row">
-      <div class="form-group form-inline mx-2 ">
-        <input id="searchText" type="text" name="searchText" placeholder="Search note..."
-          class="form-control border-primary border-right-0 border-left-0 border-top-0 align-text-bottom  border-white text-light bg-dark text-white">
-      </div>
 
-      <div class="form-group form-inline mx-2">
-        <button class="btn btn-outline-primary border-white text-white mx-2  ">
-          <i class="fa fa-search mr-2"></i>
-          Search
-        </button>
-      </div>
+          <div class="form-group form-inline mx-2">
+            <button data-toggle="modal" data-target="#insert-modal"
+              class="btn btn-outline-dark border-dark text-white  mx-2">
+              <i class="fa fa-plus mr-2"></i>
+              Add Task
+            </button>
+          </div>
 
-      <div class="form-group form-inline mx-2">
-        <button data-toggle="modal" data-target="#insert-modal" class="btn btn-outline-primary border-white text-white  mx-2">
-          <i class="fa fa-plus mr-2"></i>
-          Add Task
-        </button>
-      </div>
-
-      <div class="form-group form-inline mx-2">
-        <button id="showHideCompletedNotes" class="btn btn-outline-primary border-white text-white mx-2">
-          <i class="fa fa-check"></i>
-          <i id="completedNoteStatus">Hide Completed</i>
-      </div>
+          <div class="form-group form-inline mx-2">
+            <button id="showHideCompletedNotes" class="btn btn-outline-dark border-dark text-white mx-2">
+              <i class="fa fa-check"></i>
+              <i id="completedNoteStatus">Hide Completed</i>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
 
-  <!--Controller-->
-  <!--
-  <div id="notes" class="container-fluid  ">
-    <div class="pt-4 controller row">
-      <div class="form-group form-inline mx-2 ">
-        <input id="searchText" type="text" name="searchText" placeholder="Search note..."
-          class="form-control border-right-0 border-left-0 border-top-0 align-text-bottom">
-      </div>
 
-      <div class="form-group form-inline mx-2">
-        <button class="btn btn-outline-primary mx-2 border-dark">
-          <i class="fa fa-search mr-2"></i>
-          Search
-        </button>
-      </div>
+    <!--Show Notes-->
+    <div class="overlay">
+      <div id="showNotes" class="card-columns pt-5">
+        <div class="card text-center shadow">
+          <div class="card-header form-inline  text-white bg-dark ">
 
-      <div class="form-group form-inline mx-2">
-        <button data-toggle="modal" data-target="#insert-modal" class="btn btn-outline-primary border-dark mx-2">
-          <i class="fa fa-plus mr-2"></i>
-          Add Task
-        </button>
-      </div>
-
-      <div class="form-group form-inline mx-2">
-        <button id="showHideCompletedNotes" class="btn btn-outline-primary border-dark mx-2">
-          <i class="fa fa-check"></i>
-          <i id="completedNoteStatus">Hide Completed</i>
+            <div class="form-group ml-auto px-4">
+              <button class="float-right text-secondary   bg-transparent border-0">
+                <i class="fa fa-square-o " style="transform: scale(3);"></i>
+              </button>
+            </div>
+            <div class="form-group px-4">
+              <button class="float-right text-danger  bg-transparent border-0">
+                <i class="fa fa-trash " style="transform: scale(3);"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="lead ">asdfjl afs jfkljsdj
+          </div>
+        </div>
       </div>
     </div>
   </div>
--->
-
   <!--Insert Notes Modal-->
   <div id="insert-modal" class="modal fade">
     <div class="modal-dialog">
@@ -111,35 +110,11 @@
     </div>
   </div>
 
-  <!--Show Notes-->
-  <div class="container-fluid p-3">
-    <div id="showNotes" class="card-columns">
-      <div class="card text-center shadow">
-        <div class="card-header form-inline  text-white bg-dark ">
-
-          <div class="form-group ml-auto px-4">
-            <button class="float-right text-secondary   bg-transparent border-0">
-              <i class="fa fa-square-o " style="transform: scale(3);"></i>
-            </button>
-          </div>
-          <div class="form-group px-4">
-            <button class="float-right text-danger  bg-transparent border-0">
-              <i class="fa fa-trash " style="transform: scale(3);"></i>
-            </button>
-          </div>
-        </div>
-        <div class="card-body">
-          <h3 class="lead ">asdfjl afs jfkljsdj
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Local -->
   <script src="js/unid.js"></script>
   <script src="js/dataService.js"></script>
-  <script src="js/eventListeners.js"></script>
   <script src="js/notes.js"></script>
+  <script src="js/eventListeners.js"></script>
 
   <!-- Cloud -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
