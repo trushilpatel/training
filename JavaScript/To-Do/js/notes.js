@@ -1,11 +1,18 @@
-function renderNotes(showSelected) {
+function renderNotes(showSelected, searchText) {
   let notesDiv = document.querySelector("#showNotes")
   let Notes = getNotes()
   let children = []
 
-  if (showSelected === false){
-    Notes = Notes.filter(function (note){
+  if (showSelected === false) {
+    Notes = Notes.filter(function (note) {
       return !note.complete;
+    })
+  }
+
+  if (searchText) {
+    searchText = searchText.trim();
+    Notes = Notes.filter(function (note) {
+      return note.text.toLowerCase().includes(searchText.toLowerCase())
     })
   }
 
@@ -19,19 +26,14 @@ function renderNotes(showSelected) {
 
 function getNoteHTML(note) {
 
-  if (!note) {
-    note = {}
-  }
-  if (!note.id) {
-    note.id = " ";
-  }
-  if (!note.text) {
-    note.text = "No text is available";
-  }
+  if (!note) note = {};
+  if (!note.id) note.id = " ";
+  if (!note.text) note.text = "No text is available";
 
-  let color = ["bg-primary", "bg-success", "bg-warning","bg-dark"]
-  let selectedColor = note.complete ?color[3] : color[Math.round(Math.random() * (2))];
-  console.log("selected " + selectedColor)
+  let color = ["bg-primary", "bg-success", "bg-warning", "bg-dark"]
+  let checkBoxStyle = ["fa-square-o", "fa-check-square-o"]
+  let selectedColor = note.complete ? color[3] : color[Math.round(Math.random() * (2))];
+
   let card = `<div class="card text-center shadow">
     <div id=${'noteHeader-' + note.id} class="card-header form-inline  text-white ${selectedColor} ">
       <div class="form-group form-inline">
@@ -39,7 +41,7 @@ function getNoteHTML(note) {
     </div>
     <div class="form-group ml-auto px-4">
     <button class="float-right text-white   bg-transparent border-0" onClick="completedNote(${note.id})">
-      <i class="fa fa-check " style="transform: scale(3);"></i>
+      <i class="fa ${checkBoxStyle[Number(note.complete)]} " style="transform: scale(3);"></i>
     </button>
   </div>
   <div class="form-group px-4">

@@ -17,22 +17,67 @@
 
   <nav class="navbar navbar-dark bg-dark">
     <div class="navbar-brand">To-Do List</div>
+    <div class="pt-4 controller row">
+      <div class="form-group form-inline mx-2 ">
+        <input id="searchText" type="text" name="searchText" placeholder="Search note..."
+          class="form-control border-primary border-right-0 border-left-0 border-top-0 align-text-bottom  border-white text-light bg-dark text-white">
+      </div>
+
+      <div class="form-group form-inline mx-2">
+        <button class="btn btn-outline-primary border-white text-white mx-2  ">
+          <i class="fa fa-search mr-2"></i>
+          Search
+        </button>
+      </div>
+
+      <div class="form-group form-inline mx-2">
+        <button data-toggle="modal" data-target="#insert-modal" class="btn btn-outline-primary border-white text-white  mx-2">
+          <i class="fa fa-plus mr-2"></i>
+          Add Task
+        </button>
+      </div>
+
+      <div class="form-group form-inline mx-2">
+        <button id="showHideCompletedNotes" class="btn btn-outline-primary border-white text-white mx-2">
+          <i class="fa fa-check"></i>
+          <i id="completedNoteStatus">Hide Completed</i>
+      </div>
+    </div>
   </nav>
 
   <!--Controller-->
+  <!--
   <div id="notes" class="container-fluid  ">
-    <div class="p-3 controller">
-      <button data-toggle="modal" data-target="#insert-modal" class="btn btn-outline-primary border-dark">
-        <i class="fa fa-plus mr-2"></i>
-        Add Task
-      </button>
-      <button id="showHideCompletedNotes" class="btn btn-outline-primary border-dark">
-        <i class="fa fa-check"></i>
-        <i id="completedNoteStatus">Show Completed</i>
+    <div class="pt-4 controller row">
+      <div class="form-group form-inline mx-2 ">
+        <input id="searchText" type="text" name="searchText" placeholder="Search note..."
+          class="form-control border-right-0 border-left-0 border-top-0 align-text-bottom">
+      </div>
+
+      <div class="form-group form-inline mx-2">
+        <button class="btn btn-outline-primary mx-2 border-dark">
+          <i class="fa fa-search mr-2"></i>
+          Search
+        </button>
+      </div>
+
+      <div class="form-group form-inline mx-2">
+        <button data-toggle="modal" data-target="#insert-modal" class="btn btn-outline-primary border-dark mx-2">
+          <i class="fa fa-plus mr-2"></i>
+          Add Task
+        </button>
+      </div>
+
+      <div class="form-group form-inline mx-2">
+        <button id="showHideCompletedNotes" class="btn btn-outline-primary border-dark mx-2">
+          <i class="fa fa-check"></i>
+          <i id="completedNoteStatus">Hide Completed</i>
+      </div>
     </div>
   </div>
+-->
 
-  <!--Insert Notes-->
+  <!--Insert Notes Modal-->
   <div id="insert-modal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -51,7 +96,6 @@
             <textarea id="insertNoteTextarea" name="editor1" class="col-md-7 form-control" placeholder="Enter your note"
               style="height: 20%; width: 80%;"></textarea>
           </div>
-
           <!--Date-->
           <div class="form-group row">
             <label for="date" class="col-md-4">Deadline</label>
@@ -61,12 +105,11 @@
           <!--Submit-->
           <button id="submitNote" type="submit" data-dismiss="modal"
             class="btn btn-primary btn-block mt-3">Submit</button>
-
         </div>
+
       </div>
     </div>
   </div>
-
 
   <!--Show Notes-->
   <div class="container-fluid p-3">
@@ -76,7 +119,7 @@
 
           <div class="form-group ml-auto px-4">
             <button class="float-right text-secondary   bg-transparent border-0">
-              <i class="fa fa-check " style="transform: scale(3);"></i>
+              <i class="fa fa-square-o " style="transform: scale(3);"></i>
             </button>
           </div>
           <div class="form-group px-4">
